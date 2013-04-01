@@ -1,4 +1,3 @@
-
 #include "sapphire.h"
 
 #include "app.h"
@@ -33,7 +32,7 @@ PT_BEGIN( pt );
     // declare a timer
     static uint32_t timer;
 
-    // conifure pin as input with internal pull-up resistor
+    // configure pin as input with internal pull-up resistor
     io_v_set_mode(IO_PIN_DIGITAL_IN, IO_MODE_INPUT_PULLUP );
 
     // loop forever
