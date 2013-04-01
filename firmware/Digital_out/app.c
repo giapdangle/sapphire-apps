@@ -1,4 +1,3 @@
-
 #include "sapphire.h"
 
 #include "app.h"
@@ -52,7 +51,7 @@ PT_END( pt );
 }
 
 
-// boilerplate initialiation
+// boilerplate initialization
 void app_v_init( void ){
 
     thread_t_create( app_thread,
