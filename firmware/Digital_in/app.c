@@ -33,7 +33,7 @@ PT_BEGIN( pt );
     static uint32_t timer;
 
     // configure pin as input with internal pull-up resistor
-    io_v_set_mode(IO_PIN_DIGITAL_IN, IO_MODE_INPUT_PULLUP );
+    io_v_set_mode(IO_PIN_DIGITAL_IN, IO_MODE_INPUT_PULLUP);
 
     // loop forever
     while(1){
@@ -62,7 +62,7 @@ PT_END( pt );
 }
 
 
-// boilerplate initialiation
+// boilerplate initialization
 void app_v_init( void ){
 
     thread_t_create( app_thread,
