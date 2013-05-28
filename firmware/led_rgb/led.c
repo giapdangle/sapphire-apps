@@ -370,9 +370,12 @@ void led_v_start_pwm_timer( void ){
 	
     // pwm frequency:
     // 16,000,000 / 1024 = 15.6 KHz
-    // 2,000,000 / 1024 = 1.95 KHz	
+    // 2,000,000 / 1024 = 1.95 KHz
+    // 250,000 / 1024 = 244 Hz
+    	
     TCCR3A = 0b10101011; // 10 bit pwm (fast pwm)
-    TCCR3B = 0b00001010; // prescaler / 8 (enable fast pwm)
+    //TCCR3B = 0b00001010; // prescaler / 8 (enable fast pwm)
+    TCCR3B = 0b00001011; // prescaler / 64 (enable fast pwm)
     TCCR3C = 0;
 }
 
