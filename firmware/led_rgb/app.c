@@ -25,6 +25,7 @@
 #define KV_ID_SAT               2
 #define KV_ID_VAL               3
 #define KV_ID_FADE              4
+#define KV_ID_CHANNEL           5
 
 
 static float hue;
@@ -62,6 +63,7 @@ KV_SECTION_META kv_meta_t app_kv[] = {
     { KV_GROUP_LED, KV_ID_SAT,         SAPPHIRE_TYPE_FLOAT, 0, &sat,       app_i8_kv_handler,  "sat" },
     { KV_GROUP_LED, KV_ID_VAL,         SAPPHIRE_TYPE_FLOAT, 0, &val,       app_i8_kv_handler,  "val" },
     { KV_GROUP_LED, KV_ID_FADE,        SAPPHIRE_TYPE_FLOAT, 0, &fade,      app_i8_kv_handler,  "fade" },
+    { KV_GROUP_LED, KV_ID_CHANNEL,     SAPPHIRE_TYPE_UINT16, KV_FLAGS_PERSIST, 0, 0,           "channel" },
 };
 
 
